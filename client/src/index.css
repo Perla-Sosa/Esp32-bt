@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 84% 4.9%; /* #121212 */
+  --foreground: 0 0% 100%; /* #FFFFFF */
+  --muted: 215 28% 17%; /* #1E1E1E */
+  --muted-foreground: 217 10% 64.9%;
+  --popover: 222 84% 4.9%;
+  --popover-foreground: 0 0% 100%;
+  --card: 215 28% 17%;
+  --card-foreground: 0 0% 100%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --primary: 207 90% 54%; /* #2196F3 */
+  --primary-foreground: 211 100% 99%;
+  --secondary: 25 95% 53%; /* #FF9800 */
+  --secondary-foreground: 0 0% 100%;
+  --accent: 217 33% 17%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 4 90% 58%; /* #F44336 */
+  --destructive-foreground: 0 0% 100%;
+  --success: 122 39% 49%; /* #4CAF50 */
+  --ring: 207 90% 54%;
+  --radius: 0.5rem;
+  --surface: 215 28% 17%; /* #1E1E1E */
+}
+
+.dark {
+  --background: 222 84% 4.9%;
+  --foreground: 0 0% 100%;
+  --muted: 215 28% 17%;
+  --muted-foreground: 217 10% 64.9%;
+  --popover: 222 84% 4.9%;
+  --popover-foreground: 0 0% 100%;
+  --card: 215 28% 17%;
+  --card-foreground: 0 0% 100%;
+  --border: 217 33% 17%;
+  --input: 217 33% 17%;
+  --primary: 207 90% 54%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 25 95% 53%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 217 33% 17%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 4 90% 58%;
+  --destructive-foreground: 0 0% 100%;
+  --ring: 207 90% 54%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'Roboto Mono', monospace;
+  }
+}
+
+@layer components {
+  .keypad-btn {
+    @apply transition-all duration-150 hover:scale-105 active:scale-95;
+  }
+}
